@@ -2,9 +2,12 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import "./assets/tailwind.css";
+import BaseModal from "./components/BaseModal.vue"
 
-const app = createApp(App)
+const app = createApp(App);
 
-app.use(router)
+app.component("BaseModal", BaseModal);
 
-app.mount('#app')
+app.use(router);
+
+app.mount('#app');
