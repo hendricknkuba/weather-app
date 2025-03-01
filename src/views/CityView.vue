@@ -1,12 +1,12 @@
 <template>
-  <div>
-    <Suspense>
-      <AsyncCityView/>
-      <template>
-        <p>Loading...</p>
-      </template>
-    </Suspense>
-  </div>
+      <div>
+          <Suspense timeout="0">
+            <AsyncCityView/>
+            <template #fallback>
+              <p>Loading...</p>
+            </template>
+          </Suspense>
+      </div>
 </template>
 
 <script setup>
