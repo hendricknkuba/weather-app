@@ -156,5 +156,5 @@
       console.log(err)
     }
   };
-  const weatherData = await getWeatherData();
+  //const weatherData = await getWeatherData();
 </script>
