@@ -16,8 +16,8 @@
         </div>
 
         <BaseModal
-        :modalActive="modalActive"
-        @close-modal="toggleModal"
+          :modalActive="modalActive"
+          @close-modal="toggleModal"
         >
           <div class="text-black">
             <h1 class="text-2xl mb-1">About:</h1>
@@ -86,6 +86,7 @@
 
     let query = Object.assign({}, route.query);
     delete query.preview;
+    query.id = locationObj.id;
     router.replace({query});
   }
 
